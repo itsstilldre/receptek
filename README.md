@@ -56,12 +56,12 @@ akkor a Hozzáadás gombbal mentheti el azokat. Ezután automatikusan a listáz�
 
 ###Felhasználóifelület-modell
 ####Design-terv
-![Információk](docs/images/info.png)
-![Bejelentkezés](docs/images/login.png)
-![Listázás](docs/images/list.png)
-![Leírás](docs/images/Description.png)
-![Szerkesztés](docs/images/Szerkesztés.png)
-![Keresés](docs/images/Query.png)
+![Információk](docs/images/info.PNG)
+![Bejelentkezés](docs/images/login.PNG)
+![Listázás](docs/images/list.PNG)
+![Leírás](docs/images/Description.PNG)
+![Szerkesztés](docs/images/Szerkesztés.PNG)
+![Keresés](docs/images/Query.PNG)
 
 ##Implementáció
 
