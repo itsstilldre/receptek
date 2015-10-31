@@ -1,0 +1,54 @@
+<h1>Listázás</h1>
+<div class="panel">
+  <form method="get" action="/list" >
+    <div class="form-group">
+      <div class="col-lg-6 col-lg-offset-2">
+        
+        <input type="text"
+               class="form-control" 
+               name="query"
+               id="search" 
+               {{#if query}}
+                 value="{{query}}"
+               {{/if}}
+               placeholder="Keresés név alapján" >
+               
+      </div>
+      
+      <div class="col-lg-2" >
+        
+        <input type="submit"
+               class="btn btn-primary"
+               value="Keresés" >
+      </div>
+      
+    </div>
+  </form>
+</div>
+
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>Étel neve</th>
+      <th>Recept</th>
+      <th>Elkészítési Idő</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data as |food|}}
+    <tr>
+      <td>{{food.name}}</td>
+      <td>
+        <a href="/description/{{food.id}}">Leírás</a>
+      </td>
+      <td>{{food.idotartam}}</td>
+      <td>
+        <a href="/delete/{{food.id}}">Törlés</a>
+      </td>
+      <td>
+        <a href="/edit/{{food.id}}">Szerkesztés</a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table> 

@@ -1,0 +1,49 @@
+<h1>Szerkesztés</h1>
+<form class="form-horizontal col-lg-8 col-lg-offset-2"
+      method="post" action="/edit/:id">
+  <fieldset>
+    <div class="form-group">
+      <label for="id" class="col-lg-2 control-label">Étel száma: </label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" readonly
+               name="id" id="id" 
+               value="{{food.id}}">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="name" class="col-lg-2 control-label">Étel neve: </label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" 
+               name="name" id="name" 
+               placeholder="Pl.: Zsíroskenyér"
+               value="{{food.name}}">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="idotartam" class="col-lg-2 control-label">Időtartam: </label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" 
+               name="idotartam" id="idotartam"
+               value="{{food.idotartam}}">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="leiras" class="col-lg-2 control-label">Recept leírás: </label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" 
+               name="leiras" id="leiras"
+               value="{{food.leiras}}">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-lg-8 col-lg-offset-2">
+        <button type="reset" class="btn btn-default pull-left">Mezők törlése</button>
+        <button type="submit" class="btn btn-primary pull-right">Szerkesztés</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
